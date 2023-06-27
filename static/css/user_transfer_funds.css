@@ -1,0 +1,64 @@
+#active{
+    background-color: white;
+}
+#active a{
+    color: black;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 120px;
+}
+#pay-content{
+    width: 100%;
+    margin-top: 2%;
+    border: 1px solid rgb(223, 245, 220);
+}
+.form-group{
+    display: flex;
+    flex-direction: column;
+    /* padding: 0 6%; */
+}
+label{
+    font-weight: bold;
+}
+textarea{
+    width: 100%;
+    height: 100px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 15%;
+}
+.button{
+    display: flex;
+    justify-content: center;
+    /* width: 80%; */
+}
+button{
+    border-radius: 10px;
+    /* width: 200%; */
+    font-weight: bold;
+}
+button:hover{
+    background-color: rgb(220, 220, 245);
+}
+input{
+    height: 30px;
+    border-radius: 5px;
+}
+hr{
+    height: 2px;
+    border-width: 0;
+    color: gray;
+    background-color: gray;
+}
+#pay-head{
+    padding: 0 5%;
+}
+textarea{
+    border-radius: 4px;
+}

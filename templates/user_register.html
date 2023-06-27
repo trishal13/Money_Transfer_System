@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New user Registration | MTS</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/static/css/user_register.css">
+    <link rel="stylesheet" href="/static/css/header1.css">
+</head>
+<body>
+    
+    <!-- Page Header -->
+    <header class="sticky-top navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg  navbar-dark bg-dark">
+        <a class="navbar-brand" href="/money-transfer-system">Money Transfer System</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="">Register <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/user-login">Login <span class="sr-only"></span></a>
+            </li>
+        </ul>
+        </div>
+    </nav>
+    </header>
+    
+    <!-- Page Main -->
+    <main>
+        <h2>New User Register here</h2>
+        <form action="" method="post">
+            {% csrf_token %}
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="aadhar_no">Aadhar Number</label>
+                <input type="text" id="aadhar_no" name="aadhar_no" placeholder="Enter your aadhar no" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="mobile_no">Mobile Number</label>
+                <input type="text" id="mobile_no" name="mobile_no" placeholder="Enter your mobile no" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="dob">Date Of Birth</label>
+                <input type="date" id="dob" name="dob" placeholder="Enter your DOB" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="acc_no">Account Number</label>
+                <input type="password" id="acc_no" name="acc_no" placeholder="Enter your account no" class="form-control">
+                {% if problem == 'account no' %}
+                    <small>{{message}}</small>
+                {% endif %}
+            </div>
+            <div class="form-group">
+                <label for="re_acc_no">Confirm Account Number</label>
+                <input type="text" id="re_acc_no" name="re_acc_no" placeholder="Re-Enter your account no" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="ifsc">IFSC Code</label>
+                <input type="text" id="ifsc" name="ifsc" placeholder="Enter your ifsc" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="bank_name">Bank Name</label>
+                <input type="text" id="bank_name" name="bank_name" placeholder="Enter your bank name" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="user_id">Create User-Id</label>
+                <input type="text" id="user_id" name="user_id" placeholder="Enter user-id" class="form-control">
+                {% if problem == 'user-id' %}
+                  <small>{{message}}</small>
+                {% endif %}
+            </div>
+            <div class="form-group">
+                <label for="passwd">Create Password</label>
+                <input type="password" id="passwd" name="passwd" placeholder="Enter your password" class="form-control">
+                {% if problem == 'password' %}
+                  <small>{{message}}</small>
+                {% endif %}
+            </div>
+            <div class="form-group">
+                <label for="re_passwd">Confirm Password</label>
+                <input type="password" id="re_passwd" name="re_passwd" placeholder="Re-Enter your password" class="form-control">
+            </div>
+                <button type="submit" class="btn btn-primary">Register Now</button>
+            <div>
+                {% if problem == 'done' %}
+                <div class="alert alert-success" role="alert">
+                    {{message}}
+                </div>
+                {% elif problem == 'no_data' %}
+                  <small>{{message}}</small>
+                {% endif %}
+            </div>
+        </form>
+    </main>
+
+
+    <!-- Page Footer -->
+    <footer></footer>
+
+</body>
+</html>

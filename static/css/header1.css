@@ -1,0 +1,14 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    /* background: url('https://static.vecteezy.com/system/resources/thumbnails/008/079/404/small/online-transaction-transfer-payment-money-mobile-banking-technology-flat-template-style-suitable-for-web-landing-page-background-vector.jpg'); */
+    /* background-color: #48d0e8a2; */
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+header{
+    padding: 20px;
+    border: 2px solid black;
+    /* background-color: dodgerblue; */
+}

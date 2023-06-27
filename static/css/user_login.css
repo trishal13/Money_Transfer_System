@@ -1,0 +1,28 @@
+main{
+    display: flex;
+    justify-content: center;
+}
+#login-form{
+    margin: 5% 10%;
+}
+form{
+    /* background-color: rgba(140, 182, 227, 0.523); */
+    padding: 10%;
+    border: 2px solid black;
+    border-radius: 15%;
+}
+h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid black; */
+}
+small{
+    color: red;
+    font-weight: 500;
+}
+#button{
+    display: flex;
+    justify-content: center;
+}
+

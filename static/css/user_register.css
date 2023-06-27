@@ -1,0 +1,24 @@
+form{
+    /* background-color: rgba(140, 182, 227, 0.523); */
+    padding: 3% 10%;
+    margin: 2% 10%;
+    border: 2px solid black;
+    border-radius: 5%;
+}
+h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid black; */
+}
+small{
+    color: red;
+    font-weight: 500;
+}
+nav{
+    position: sticky;
+}
+li a{
+    text-decoration: none;
+    color: white;
+}

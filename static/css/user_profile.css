@@ -1,0 +1,37 @@
+main{
+    display: flex;
+    align-items: center;
+    margin: 2%;
+    margin-bottom: 120px;
+}
+.profile-content{
+    width: 100%;
+    padding: 2%;
+    /* border: 2px solid black; */
+}
+.profile-item{
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 1%;
+}
+.profile-item div{
+    width: 50%;
+}
+.element{
+    font-weight: bold;
+}
+hr{
+    height: 2px;
+    border-width: 0;
+    color: gray;
+    background-color: gray;
+}
+.note{
+    margin-top: 6%;
+}
+#note{
+    font-style: italic
+}
+.details{
+    font-size: larger;
+}

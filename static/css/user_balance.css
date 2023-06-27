@@ -1,0 +1,27 @@
+#active{
+    background-color: white;
+}
+#active a{
+    color: black;
+}
+#show-balance small{
+    color: black;
+    font-weight: bold;
+}
+#show-balance{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#success_image{
+    width: 40%;
+    padding: 1% 7%;
+    margin-top: 2%;
+}
+h4{
+    padding: 0;
+}
+main{
+    margin-bottom: 120px;
+}

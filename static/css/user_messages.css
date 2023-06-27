@@ -1,0 +1,36 @@
+.message-container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+.message {
+    margin-bottom: 10px;
+}
+.message .date-time {
+    font-size: 12px;
+    color: #999;
+}
+.message .content {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+}
+.message-container{
+    /* height: 450px; */
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+main{
+    margin: 2%;
+    margin-bottom: 120px;
+}
+#active{
+    background-color: white;
+}
+#active a{
+    color: black;
+}

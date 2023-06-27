@@ -1,0 +1,61 @@
+main{
+    margin: 1%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 120px;
+}
+.paid{
+    font-weight: 500;
+    color: red;
+}
+.recieved{
+    font-weight: 500;
+    color: green;
+}
+.type{
+    font-weight: bold;
+}
+.pay-item{
+    display: flex;
+}
+.history-content{
+    width: 100%;
+    padding: 1%;
+}
+.pay-item-ele1{
+    width: 50%;
+}
+.pay-item-ele2{
+    width: 50%;
+}
+.pay-table{
+    border: 1px solid #ccc;
+    padding: 1%;
+    width: 100%;
+}
+p{
+    padding: 0;
+}
+#active{
+    background-color: white;
+}
+#active a{
+    color: black;
+}
+#heading-hr{
+    height: 2px;
+    border-width: 0;
+    color: gray;
+    background-color: gray;
+}
+.pay-item:hover{
+    background-color: #cfcaca;
+}
+
+#table-heading{
+    display: flex;
+    flex-wrap: wrap;
+}
+#search-bar{
+    margin-left: 3%;
+}
