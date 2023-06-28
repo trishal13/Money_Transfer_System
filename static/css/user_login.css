@@ -4,12 +4,12 @@ main{
 }
 #login-form{
     margin: 5% 10%;
+    width: 70%;
 }
 form{
-    /* background-color: rgba(140, 182, 227, 0.523); */
-    padding: 10%;
-    border: 2px solid black;
-    border-radius: 15%;
+    padding: 5% 10%;
+    border-radius: 15px;
+    border: 1px solid black;
 }
 h2{
     display: flex;
