@@ -504,15 +504,10 @@ def User_Query(request,user_id,unique_key,session_id):
 
 def User_Logout(request,user_id,unique_key,session_id):
     details=Users.objects.get(User_ID=user_id)
-    unique_key=details.Unique_Key
     details.Active_Status=False
     details.save()
 
-    print(request.session)
-
-    print(Session.objects.all()) #you see all sessions
-    Session.objects.all().delete() 
-
+    request.session.flush()
     del session_id
 
     return render(request, 'user_logout.html')
